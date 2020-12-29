@@ -1,13 +1,12 @@
-Start every task with the goal in mind. I read that in a good book once, maybe I should apply it
+# Project aim: 
 
-Goals: 
+ To reverse engineer the Google.com home page (at least in design) using HTML and CSS. This project also involes getting comfortable with dev tools and project baiscs (such as Github) 
 
-- Refresh memory on Git workflow 
-- Become a keyboard master on Linux, opening files with mere commands
-- Exercise mindfulness during coding to maximize deep work 
-- Ah! Use dev tools to reverse engineer a sexy Google homepage. 
+# Tasks: 
 
-I might have to read more README's to get a better idea for what to use this space for. 
+1. Put main elements on page (logo and search form) 
+2. Build navbar across top 
+3. Recreate footer. 
+4. Celebrate euphoria of getting code to work. 
 
-UPDATE: 
-asd
+Notes: the language settings of this Google homepage are in Japanese. Content should be the same, however.
