@@ -1,6 +1,6 @@
 # Project aim: 
 
- To reverse engineer the Google.com home page (at least in design) using HTML and CSS. This project also involes getting comfortable with dev tools and project baiscs (such as Github) 
+ To reverse engineer the Google.com home page (at least in design) using HTML and CSS. This project also involes getting comfortable with dev tools and project basics (such as Github) 
 
 # Tasks: 
 
