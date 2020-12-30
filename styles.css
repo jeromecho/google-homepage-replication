@@ -1,0 +1,190 @@
+html, body{ /* set HTML to 100%! html tag is the container for all other HTML
+    elements. So body 100% without html 100% would just be 100% of 0 */ 
+   height: 100%;
+   width: 100%; 
+}
+
+a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.8); /*changing color on ul
+    appears to have no impact while changing here does*/
+}
+
+article{
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 100%; /* one column 100% of page - guess */ 
+    grid-template-rows: auto 1fr auto;  /*auto makes element high as it naturally is*/  
+}
+
+#nav{
+    position: relative;
+    right: 20px;
+    display: flex;
+    float: right; 
+    font-size: 12px;
+    font-family: arial, sans-serif;
+}
+
+ul{
+    margin: 10px 10px 10px 10px;
+}
+
+#gmail{
+    position: relative;
+    top: 9px;
+}
+
+#pic{
+    position: relative;
+    top: 9px;
+}
+
+main{
+    position: relative;
+    top: -7%;
+    margin: auto; /*why does margin: 50px auto 50px uato also affect nav?*/
+    height: 60%;
+    /* background-color: rgba(0,0,0,0.5); */
+}
+
+.button{
+    position: relative;
+    text-decoration: none; /*removes hypderlink styling*/
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,0.03);
+    padding: 10px;
+    left: 120px;
+    top: 30px; /*why can't I just use margin?*/
+    margin: 5px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    height: 30px; 
+    width: 500px; 
+    border: 1px solid #dfe1e5; 
+    border-radius: 24px;
+    padding: 5px 10px 5px 16px;
+}
+
+.search::hover{
+    box-shadow: 20px 20px 30 30 black;
+}
+
+.search_logo{
+    margin-right: 15px;
+}
+
+#circle{
+    display: flex; 
+    align-items: center;
+    height: 12px;
+    width: 12px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+}
+
+#circle_inside{
+    height: 7px;
+    width: 7px;
+    position: relative;
+    left: 2.49px; 
+    background-color: white;
+    border-radius: 50%;
+}
+
+#handle{
+    height: 7px; 
+    width: 2px;
+    background-color: rgba(0,0,0,0.3);
+    transform: rotate(-41deg);
+    position: relative; 
+    left: 11.5px;
+    top: -2.6px;
+}
+
+#search_bar{ /*doesn't require additional movement because 
+    .search is display:flex and has it aligned towards the center*/
+    flex: 1; /*flex-grow: 1; flex-shrink: 1; flex-basis: 0%*/
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid #effeef;
+}
+
+.search_blank{
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+
+.options_logo{
+    display: grid;
+    grid-template-areas: 
+    "dot1 dot2 dot3"
+    "dot4 dot5 dot6"
+    "dot7 dot8 dot9";
+    grid-template-columns: 1fr 1fr 1fr; /*try with repeat()*/
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+}
+
+div[id^="dot"]{ /* ^ means begins with. Very similar to Python */
+    width: 4px;
+    height: 4px;
+    margin: 1px;
+    background-color: gray;
+}
+
+#profile{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+footer{
+    height: 50px;
+    max-width: 98.3%; /*why wouldn't 100% work?*/
+    margin: 0;
+    padding: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    background-color: rgba(0,0,0,0.05);
+    color: rgba(0,0,0,0.5);
+    font-size: 14px;
+}
+
+#footinfo{
+    position: relative;
+    float: right;
+}
+
+#ad::after{
+    content:"";
+}
+
+
+@media (max-width: 600px){
+    footer{
+        text-align: center;
+        font-size: 15px;
+        height: 90px;
+    }
+    #footinfo{
+        float: none;
+        display: block;
+    }
+    .foot_item{
+        margin: 10px;
+    }
+}
